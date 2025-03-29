@@ -250,7 +250,7 @@ class Menu extends Component {
 
   doPrint = async () => {
     if (this.state.numOfTokens < TOKEN_COST.PRINT) {
-      window.alert(`You need at least ${TOKEN_COST.PRINT} MediToken to print`);
+      window.alert(`You need at least ${TOKEN_COST.PRINT} PPT token to print`);
       return;
     }
 
@@ -273,7 +273,7 @@ class Menu extends Component {
     }
 
     if (this.state.numOfTokens < TOKEN_COST.SAVE) {
-      window.alert(`You need at least ${TOKEN_COST.SAVE} MediToken to save`);
+      window.alert(`You need at least ${TOKEN_COST.SAVE} PPT token to save`);
       return;
     }
 
@@ -301,7 +301,7 @@ class Menu extends Component {
     if (!filename) return;
 
     if (this.state.numOfTokens < TOKEN_COST.SAVE_AS) {
-      window.alert(`You need at least ${TOKEN_COST.SAVE_AS} MediToken to save`);
+      window.alert(`You need at least ${TOKEN_COST.SAVE_AS} PPT token to save`);
       return;
     }
 
